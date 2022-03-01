@@ -54,7 +54,7 @@ const IllustrationImage = styled.div`
 `;
 
 export default ({
-  logoLinkUrl = "/",
+  logoLinkUrl = "/website",
   illustrationImageSrc = illustration,
   headingText = "Sign In To Impact Academy",
   socialButtons = [
