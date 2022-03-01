@@ -105,7 +105,7 @@ import ComponentRenderer from "ComponentRenderer.js";
 // import MainLandingPage from "MainLandingPage.js";
 // import ThankYouPage from "ThankYouPage.js";
 
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { HashRouter, BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 export default function App() {
   // If you want to disable the animation just use the disabled `prop` like below on your page's component
@@ -113,7 +113,7 @@ export default function App() {
 
 
   return (
-    <Router>
+    <HashRouter>
       <Switch>
         <Route path="/components/:type/:subtype/:name">
           <ComponentRenderer />
@@ -128,7 +128,7 @@ export default function App() {
           <SaaSProductLandingPage />
         </Route>
       </Switch>
-    </Router>
+    </HashRouter>
   );
 }
 
