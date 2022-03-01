@@ -113,8 +113,8 @@ export default function App() {
 
 
   return (
-    <HashRouter>
-      <Switch>
+    <HashRouter basename="/">
+      {/* <Switch> */}
         <Route path="/components/:type/:subtype/:name">
           <ComponentRenderer />
         </Route>
@@ -127,7 +127,7 @@ export default function App() {
         <Route path="/">
           <SaaSProductLandingPage />
         </Route>
-      </Switch>
+      {/* </Switch> */}
     </HashRouter>
   );
 }
